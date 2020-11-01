@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Generer des attestation nov 2020",
   "main": "src/index.js",
-  "type":"module",
   "scripts": {
     "serve": "node src/server.js",
     "start": "babel-node src/index.js",

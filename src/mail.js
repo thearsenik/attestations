@@ -1,5 +1,5 @@
-import nodemailer from 'nodemailer';
-import { mailAuth, DEFAULT_MAIL_PWD } from './config';
+const nodemailer = require( 'nodemailer');
+const { mailAuth, DEFAULT_MAIL_PWD } = require( './config');
 
 const TRANSPORTER_PROMISE = createTransporter()
 

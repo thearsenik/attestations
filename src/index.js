@@ -1,7 +1,7 @@
-import fs from 'fs';
-import { generatePdf } from './pdf-util';
-import { profiles, reasons, MAIL_AVAILABLE } from './config';
-import { attestationMail } from './mail';
+const fs = require( 'fs');
+const { generatePdf } = require( './pdf-util');
+const { profiles, reasons, MAIL_AVAILABLE } = require( './config');
+const { attestationMail } = require( './mail');
 
 global.fetch = require("node-fetch");
 const REPO_URL = 'https://github.com/cglacet/attestations/raw/master/';

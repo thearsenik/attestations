@@ -1,10 +1,12 @@
-import express from 'express';
-import {exec} from 'child_process';
-import yaml from 'js-yaml'; 
-import fs from 'fs';
+const express = require('express');
+const exec = require('child_process').exec;
+const yaml = require('js-yaml'); 
+const fs = require('fs');
 
 const app = express();
 const port = 3000;
+
+app.use('/download', express.static('download'));
 
 app.get('/:configName/:reason', (req, res) => {
     let configName = req.params.configName;

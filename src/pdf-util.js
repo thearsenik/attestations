@@ -1,5 +1,5 @@
-import { generateQR } from './util'
-import { PDFDocument, StandardFonts } from 'pdf-lib'
+const { generateQR } = require( './util')
+const { PDFDocument, StandardFonts } = require( 'pdf-lib')
 
 const ys = {
   travail: 578,

@@ -1,6 +1,6 @@
-import yaml from 'js-yaml';
-import fs from 'fs';
-import dateFormat from 'dateformat';
+const yaml = require('js-yaml');
+const fs = require('fs');
+const dateFormat = require('dateformat');
 
 const TRANSLATION_RULES = new Map([
     ['nom', 'lastname'],
