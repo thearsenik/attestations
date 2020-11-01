@@ -12,7 +12,7 @@ const TRANSLATION_RULES = new Map([
     ['ville', 'city'],
 ]);
 
-const YAML_CONFIG_FILE = './config.yml';
+const YAML_CONFIG_FILE = './config-'+process.argv[2]+'.yml';
 const CONFIG = yaml.safeLoad(fs.readFileSync(YAML_CONFIG_FILE, 'utf8'));
 
 const DEFAULT_MAIL_PWD = 'abcdefghijklmnop';
@@ -26,7 +26,7 @@ if (MAIL_CONFIG['pass'] == DEFAULT_MAIL_PWD){
     MAIL_AVAILABLE = false;
 }
 
-export const reasons = CONFIG['raisons'];
+export const reasons = [process.argv[3]];
 export const mailAuth = MAIL_CONFIG;
 
 export function* profiles(){

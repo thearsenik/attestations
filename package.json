@@ -4,6 +4,7 @@
   "description": "Generer des attestation nov 2020",
   "main": "src/index.js",
   "scripts": {
+    "serve": "node src/server.js",
     "start": "babel-node src/index.js",
     "help": "babel-node src/help.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +23,7 @@
   },
   "dependencies": {
     "dateformat": "^3.0.3",
+    "express": "^4.17.1",
     "js-yaml": "^3.14.0",
     "node-fetch": "^2.6.1",
     "nodemailer": "^6.4.14",
