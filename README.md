@@ -24,7 +24,7 @@ npm run serve
 ```
 
 ## Générer une attestation
-Il suffit d'ouvrir un navigateur à l'adresse: http://<ip_ou_domaine>:3000/<personne>/<motif>
+Il suffit d'ouvrir un navigateur à l'adresse: ```http://<ip_ou_domaine>:3000/<personne>/<motif>```
 Où:
   - *personne* correspond au suffixe du fichier de configuration à utiliser
   - *motif* correspond à l'un des motif suivant:
